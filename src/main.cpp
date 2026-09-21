@@ -1,16 +1,16 @@
 #include <iostream>
 
-#include "Board.h"
-typedef enum MAIN_res_e{
-    MAIN_RES_SUCCESS,
-    MAIn_RES_FAILED,
-}MAIN_res_t;
+#include "Game.h"
 
-int main(void){
+typedef enum MAIN_res_e {
+  MAIN_RES_SUCCESS,
+  MAIn_RES_FAILED,
+} MAIN_res_t;
 
-    Board * board = new Board();
+int main(void) {
 
-    
-    
-    return 0;
+  Game *game = new Game();
+  game->run();
+
+  return MAIN_RES_SUCCESS;
 }
